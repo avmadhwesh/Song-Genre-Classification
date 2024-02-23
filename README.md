@@ -9,5 +9,11 @@ The dataset encompasses a wide range of musical genres, offering diversity essen
 ### Dataset Link
 http://millionsongdataset.com/musixmatch/ 
 ## Problem Definition
+### Problem
+The objective of our project is to develop a machine learning model capable of accurately predicting the genre of a song from its lyrics. This process involves determining a set of appropriate music genres into which songs can be placed, converting song lyrics into usable data, and the classification of lyrics into distinct musical genres by leveraging patterns and features extracted from the textual content of lyrics.
+
+### Motivation
+Our motivation for this project is to help increase the diversity and scope of streaming platforms and other services. Automated genre classification is crucial to the function of platforms and recommendations systems, and by making a model that can potentially place songs into genres without artist or platform manager intervention, the user experience and content organization on streaming platforms may be enhanced. Further, understanding the relationship between lyrics and genres could provide insights into the evolving trends and themes within different music genres as well as insights into cultural traditions.
+
 ## Methods
 ## Results/Discussion
