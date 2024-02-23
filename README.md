@@ -32,4 +32,8 @@ Our motivation for this project is to help increase the diversity and scope of s
 
 ## Gantt Chart
 ![mlgantt_1](https://github.gatech.edu/storage/user/70451/files/3bcd8922-2d1d-4232-adce-ce0541a0e797)
+![mlgantt_2](https://github.gatech.edu/storage/user/70451/files/6359d49c-dfab-46a5-9c07-5a43acd085da)
+![mlgantt_3](https://github.gatech.edu/storage/user/70451/files/b2adf859-a980-450a-b2a4-37c987700c45)
 
+## Contribution Table
+![mlcontribution](https://github.gatech.edu/storage/user/70451/files/7c7df4a3-1266-487f-8964-bd1e48ad75e8)
