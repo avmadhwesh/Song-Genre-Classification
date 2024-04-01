@@ -22,6 +22,8 @@ All of these methods can be found in the scikit-learn library.
 
 ## Results/Discussion
 We plan on using 4 quantitative metrics. The first metric is accuracy [4,5]. The second metric is precision [4,6]. The third metric is recall [4,7]. The last metric is the F1 score [4,8]. The goal for all would be to maximize the value as close to 1 as possible, but a value of .8 or above can be considered successful for accuracy and values above .7 for each genre can be considered successful for precision, recall and F1 score [5,6,7,8]. We expect to get an accuracy score above .8 and precision, recall and F1 scores above .7 for each class. 
+As we move forward, we hope to train the machine learning model with the data continuously so that it learns the dataset well and is able to predict as we apply it forward. We will also see if there are any errors that are appearing in the processed data and results. This will give us an idea on how to further improve the testing/training set to remove any faulty data points. We do not want the algorithm to be based on incorrect data.  
+Further, we still have to extend this process to the other 2 models since it has only been implemented on one. We need to train the model using the new dataset and the appropriate features, validate the model to ensure it’s performing as expected, and document the whole process. We need to use quantitative metrics to evaluate their performance and analyze the results. From there, we will hopefully be able to successfully predict song genre based off lyrics.
 
 ## References
 [1] “1.4. Support Vector Machines — scikit-learn 0.22.1 documentation,” scikit-learn.org. https://scikit-learn.org/stable/modules/svm.html#classification <br>
@@ -34,6 +36,7 @@ We plan on using 4 quantitative metrics. The first metric is accuracy [4,5]. The
 [8] “sklearn.metrics.f1_score,” scikit-learn. https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html#sklearn.metrics.f1_score <br>
 [9]  Li, T., Ogihara, M., & Tzanetakis, G. (Eds.). (2011). Music data mining. CRC Press. <br>
 [10] Boonyanit, Anna & Dahl, Andrea. Music Genre Classification using Song Lyrics. Stanford University.
+[11] Nayak, Nikhil, Apr 8, 2022, "Genius Song Lyrics", Kaggle. [Online]. Available: https://www.kaggle.com/datasets/carlosgdcj/genius-song-lyrics-with-language-information
 
 ## Gantt Chart
 ![mlgantt_1](https://github.gatech.edu/storage/user/70451/files/3bcd8922-2d1d-4232-adce-ce0541a0e797)
