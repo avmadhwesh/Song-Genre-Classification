@@ -28,7 +28,8 @@ The three data preprocessing methods we implemented were encoding each of the ge
 We plan on using 4 quantitative metrics. The first metric is accuracy [4,5]. The second metric is precision [4,6]. The third metric is recall [4,7]. The last metric is the F1 score [4,8]. The goal for all would be to maximize the value as close to 1 as possible, but a value of .8 or above can be considered successful for accuracy and values above .7 for each genre can be considered successful for precision, recall and F1 score [5,6,7,8]. We expect to get an accuracy score above .8 and precision, recall and F1 scores above .7 for each class. 
 
 #### Midterm Results:
-- add actual results <br>
+add actual results <br>
+
 As we move forward, we hope to train the machine learning model with the data continuously so that it learns the dataset well and is able to predict as we apply it forward. We will also see if there are any errors that are appearing in the processed data and results. This will give us an idea on how to further improve the testing/training set to remove any faulty data points. We do not want the algorithm to be based on incorrect data.  
 Further, we still have to extend this process to the other 2 models since it has only been implemented on one. We need to train the model using the new dataset and the appropriate features, validate the model to ensure it’s performing as expected, and document the whole process. We need to use quantitative metrics to evaluate their performance and analyze the results. From there, we will hopefully be able to successfully predict song genre based off lyrics.
 
