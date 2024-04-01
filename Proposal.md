@@ -1,7 +1,6 @@
 # Group 48 Project 
-## Project Proposal
-### Introduction/Background
-#### Literature Review
+## Introduction/Background
+### Literature Review
 Music information retrieval, or MIR, is a growing science where datasets are used to extract musical information from songs or other forms of music. [9] There has been a growing interest in utilizing song lyrics as a valuable source of information for genre classification. Existing studies have explored various methods, such as natural language processing and statistical models, to extract meaningful features from lyrics and predict musical genres accurately [10]. 
 
 ### Dataset
@@ -20,6 +19,10 @@ Our motivation is to contribute to the scope of streaming platforms and other se
 The three data preprocessing methods we plan on utilizing are feature extraction, feature selection, and data splitting. Feature extraction will allow us to process the raw lyric data into underlying patterns found between lyrics and genres. Feature selection will enable us to pick out the most relevant features to focus on. Data splitting will allow us to split our data into a train set and a test set [3]. 
 The ML algorithms and supervised learning methods we plan to use are Support Vector Machine Classification, Decision Tree Classification, and Multinomial Naive Bayes. These methods are useful in classifying the features found into categories based on different parameters [1, 2]. For example, Multinomial Naive Bayes will be useful in predicting the genre based on the frequency of certain words [2]. 
 All of these methods can be found in the scikit-learn library.
+
+#### Midterm Progress: 
+The three data preprocessing methods we implemented were encoding each of the genres into numbers, feature extraction, and splitting our dataset into a train and a test set. In order to encode each of the genres into numerical values, we used sklearn implementation of Ordinal Encoder. We decided to encode our genres because they were originally all strings, but as numbers it will be easier to compare our predicted labels from our trained models against the true labels when measuring the accuracy of our models. Another preprocessing method we implemented was feature extraction. Since lyrics can have numbers, special characters, and insignificant words such as “the”, “is”, “of”, etc., we decided to get rid of these words in our lyrics dataset, extracting only the essential words of the lyrics. Lastly, we split our dataset into a training dataset and a test dataset. Since we are implementing supervised learning ML algorithms, it is important to split the data so we can train the model with the train set and see if it accurately predicts the true labels of the test set. 
+
 
 ## Results/Discussion
 We plan on using 4 quantitative metrics. The first metric is accuracy [4,5]. The second metric is precision [4,6]. The third metric is recall [4,7]. The last metric is the F1 score [4,8]. The goal for all would be to maximize the value as close to 1 as possible, but a value of .8 or above can be considered successful for accuracy and values above .7 for each genre can be considered successful for precision, recall and F1 score [5,6,7,8]. We expect to get an accuracy score above .8 and precision, recall and F1 scores above .7 for each class. 
