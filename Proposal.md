@@ -1,6 +1,7 @@
-# Group 48 Project Proposal
-## Introduction/Background
-### Literature Review
+# Group 48 Project 
+## Project Proposal
+### Introduction/Background
+#### Literature Review
 Music information retrieval, or MIR, is a growing science where datasets are used to extract musical information from songs or other forms of music. [9] There has been a growing interest in utilizing song lyrics as a valuable source of information for genre classification. Existing studies have explored various methods, such as natural language processing and statistical models, to extract meaningful features from lyrics and predict musical genres accurately [10]. 
 
 ### Dataset
