@@ -29,6 +29,8 @@ We plan on using 4 quantitative metrics. The first metric is accuracy [4,5]. The
 As we move forward, we hope to train the machine learning model with the data continuously so that it learns the dataset well and is able to predict as we apply it forward. We will also see if there are any errors that are appearing in the processed data and results. This will give us an idea on how to further improve the testing/training set to remove any faulty data points. We do not want the algorithm to be based on incorrect data.  
 Further, we still have to extend this process to the other 2 models since it has only been implemented on one. We need to train the model using the new dataset and the appropriate features, validate the model to ensure it’s performing as expected, and document the whole process. We need to use quantitative metrics to evaluate their performance and analyze the results. From there, we will hopefully be able to successfully predict song genre based off lyrics.
 
+#### Midterm Results:
+
 ## References
 [1] “1.4. Support Vector Machines — scikit-learn 0.22.1 documentation,” scikit-learn.org. https://scikit-learn.org/stable/modules/svm.html#classification <br>
 [2] “1.9. Naive Bayes — scikit-learn 0.23.2 documentation,” scikit-learn.org. https://scikit-learn.org/stable/modules/naive_bayes.html#multinomial-naive-bayes <br>
