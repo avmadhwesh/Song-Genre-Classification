@@ -67,8 +67,6 @@ tfidf = TfidfVectorizer(stop_words="english", token_pattern=onlyLetters)
 xtrainVector = tfidf.fit_transform(xtrain)
 xtestVector = tfidf.transform(xtest)
 
-
-#need to implement how pred and ytest differ - how accurate our model was at predicting the genre
 # ml supervised learning algorithm of multinomial naive bayes
 mnb = MultinomialNB()
 mnb.fit(xtrainVector, ytrain)
