@@ -59,5 +59,6 @@ Further, we still have to extend this process to the other 2 models since it has
 ![mlgantt_3](https://github.gatech.edu/storage/user/70451/files/b2adf859-a980-450a-b2a4-37c987700c45)
 
 ## Contribution Table
+![mlcontribution](https://github.gatech.edu/storage/user/70451/files/7c7df4a3-1266-487f-8964-bd1e48ad75e8)
 ![image](https://github.gatech.edu/storage/user/70451/files/5b861a2a-5e63-4c84-89d7-8cb56aaaa90e)
 
