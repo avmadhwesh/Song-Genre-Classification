@@ -4,9 +4,9 @@
 Music information retrieval, or MIR, is a growing science where datasets are used to extract musical information from songs or other forms of music. [9] There has been a growing interest in utilizing song lyrics as a valuable source of information for genre classification. Existing studies have explored various methods, such as natural language processing and statistical models, to extract meaningful features from lyrics and predict musical genres accurately [10]. 
 
 ### Dataset
-The dataset encompasses a wide range of musical genres. The musiXmatch dataset offers word frequency information in a bag-of-words representation which captures linguistic patterns, which genre-correlated patterns can be discerned from.The inclusion of various genres ensures the model's capability to generalize across different musical styles.
+The dataset’s information comes from Genius which is a platform that contains content including songs, poems and books, but mostly songs. Each entry in the dataset represents a piece of content from Genius and includes various features such as title, genre, artist, year, views, artist features, lyrics, ID, and language.
 
-Dataset Link: http://millionsongdataset.com/musixmatch/ 
+Dataset Link: https://www.kaggle.com/datasets/carlosgdcj/genius-song-lyrics-with-language-information
 
 ## Problem Definition
 ### Problem
