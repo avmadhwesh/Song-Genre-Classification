@@ -31,13 +31,13 @@ We plan on using 4 quantitative metrics. The first metric is accuracy [4,5]. The
 
 ## Confusion Matrix
 
-![Confusion Matrix](/images/confusion_matrix.png)
+![Confusion Matrix](/images/confusion-matrix.png)
 
 This confusion matrix provides insights into the model's performance across different genres. The imbalance suggests that the model may be biased towards predicting the 'pop' genre. This is possibly due to an imbalance in the dataset or features that strongly correlate with the 'pop' genre, or potentially due to the inherent characteristics of the dataset. In future steps we seek to improve the model and re-evaluate the confusion matrix.
 
 ## Learning Curve
 
-![Learning Curve](/images/learning_curve.png)
+![Learning Curve](/images/learning-curve.png)
 
 The learning curve demonstrates the model's training dynamics and generalization performance. The stable  cross-validation score signifies consistent performance cross varying training sample sizes. This suggests that the model demonstrates thorough generalization capabilities and is not prone to significant fluctuations in performance with different data subsets. The increasing trend of the training score with the number of training examples indicates the model's capacity to learn and improve accuracy as it encounters more data. 
 
