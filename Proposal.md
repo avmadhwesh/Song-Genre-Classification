@@ -29,13 +29,13 @@ We plan on using 4 quantitative metrics. The first metric is accuracy [4,5]. The
 
 #### Midterm Results:
 
-## Confusion Matrix
+##### Confusion Matrix
 
 ![Confusion Matrix](/images/confusion-matrix.png)
 
 This confusion matrix provides insights into the model's performance across different genres. The imbalance suggests that the model may be biased towards predicting the 'pop' genre. This is possibly due to an imbalance in the dataset or features that strongly correlate with the 'pop' genre, or potentially due to the inherent characteristics of the dataset. In future steps we seek to improve the model and re-evaluate the confusion matrix.
 
-## Learning Curve
+##### Learning Curve
 
 ![Learning Curve](/images/learning-curve.png)
 
