@@ -4,7 +4,10 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
-
+import matplotlib.pyplot as plt
+import numpy as np
+from sklearn.metrics import confusion_matrix
+import seaborn as sns
 
 #isolating the lyrics column and the genres column in the csv file and turning them into lists
 dataF = pd.read_csv("newsong.csv")
@@ -85,5 +88,16 @@ print("Recall:", recall)
 print("F1-score:", f1)
 
 
+##added
+
+# Calculate confusion matrix
+confusion = confusion_matrix(ytest, pred)
+genre_labels = list(mapping.keys())
+plt.figure(figsize=(10, 8))
+sns.heatmap(confusion, annot = True, fmt = 'd', cmap = 'Blues', xticklabels = genre_labels, yticklabels = genre_labels)
+plt.xlabel('Predicted')
+plt.ylabel('Actual')
+plt.title('Confusion Matrix')
+plt.show()
 
 
