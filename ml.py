@@ -100,14 +100,39 @@ print("Recall for MNB:", recall)
 print("F1-score for MNB:", f1)
 
 # Evaluate decision tree model
+# Make predictions using Decision Tree Classifier
+treePred = tree.predict(xtestVector)
+
+# Evaluate Decision Tree model
+accuracy_tree = accuracy_score(ytest, treePred)
+precision_tree = precision_score(ytest, treePred, average='weighted', zero_division=1)
+recall_tree = recall_score(ytest, treePred, average='weighted')
+f1_tree = f1_score(ytest, treePred, average='weighted')
+
+print("Accuracy for Decision Tree Classifier:", accuracy_tree)
+print("Precision for Decision Tree Classifier:", precision_tree)
+print("Recall for Decision Tree Classifier:", recall_tree)
+print("F1-score for Decision Tree Classifier:", f1_tree)
 
 
 # Evaluate svm model
+# Make predictions using Support Vector Machine
+svmPred = svm.predict(xtestVector)
 
+# Evaluate Support Vector Machine model
+accuracy_svm = accuracy_score(ytest, svmPred)
+precision_svm = precision_score(ytest, svmPred, average='weighted', zero_division=1)
+recall_svm = recall_score(ytest, svmPred, average='weighted')
+f1_svm = f1_score(ytest, svmPred, average='weighted')
+
+print("Accuracy for Support Vector Machine:", accuracy_svm)
+print("Precision for Support Vector Machine:", precision_svm)
+print("Recall for Support Vector Machine:", recall_svm)
+print("F1-score for Support Vector Machine:", f1_svm)
 
 ##added
 
-# Calculate confusion matrix
+# Calculate confusion matrix 
 confusion = confusion_matrix(ytest, pred)
 genre_labels = list(mapping.keys())
 plt.figure(figsize=(10, 8))
@@ -117,4 +142,27 @@ plt.ylabel('Actual')
 plt.title('Confusion Matrix')
 plt.show()
 
+# confusion matrix for decision tree 
+# Calculate confusion matrix for Decision Tree Classifier
+confusion_tree = confusion_matrix(ytest, treePred)
+
+# Visualize confusion matrix for Decision Tree Classifier
+plt.figure(figsize=(10, 8))
+sns.heatmap(confusion_tree, annot=True, fmt='d', cmap='Blues', xticklabels=genre_labels, yticklabels=genre_labels)
+plt.xlabel('Predicted')
+plt.ylabel('Actual')
+plt.title('Confusion Matrix for Decision Tree Classifier')
+plt.show()
+
+#visualize for SVM
+# Calculate confusion matrix for Support Vector Machine
+confusion_svm = confusion_matrix(ytest, svmPred)
+
+# Visualize confusion matrix for Support Vector Machine
+plt.figure(figsize=(10, 8))
+sns.heatmap(confusion_svm, annot=True, fmt='d', cmap='Blues', xticklabels=genre_labels, yticklabels=genre_labels)
+plt.xlabel('Predicted')
+plt.ylabel('Actual')
+plt.title('Confusion Matrix for Support Vector Machine')
+plt.show()
 
