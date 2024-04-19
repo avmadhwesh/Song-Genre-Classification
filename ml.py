@@ -3,6 +3,8 @@ from sklearn.preprocessing import OrdinalEncoder
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 import matplotlib.pyplot as plt
 import numpy as np
@@ -75,17 +77,32 @@ mnb = MultinomialNB()
 mnb.fit(xtrainVector, ytrain)
 pred = mnb.predict(xtestVector)
 
-# Evaluate the model
+# ml supervised learning algorithm of decision tree classifier
+tree = DecisionTreeClassifier()
+tree.fit(xtrainVector, ytrain)
+treePred = tree.predict(xtestVector)
+
+#ml supervised learning algorithm of support vector machine
+svm = SVC()
+svm.fit(xtrainVector, ytrain)
+svmPred = svm.predict(xtestVector)
+
+# Evaluate mnb model
 accuracy = accuracy_score(ytest, pred)
-print("Accuracy:", accuracy)
+print("Accuracy for MNB:", accuracy)
 
 precision = precision_score(ytest, pred, average='weighted',zero_division=1)
 recall = recall_score(ytest, pred, average='weighted')
 f1 = f1_score(ytest, pred, average='weighted')
 
-print("Precision:", precision)
-print("Recall:", recall)
-print("F1-score:", f1)
+print("Precision for MNB:", precision)
+print("Recall for MNB:", recall)
+print("F1-score for MNB:", f1)
+
+# Evaluate decision tree model
+
+
+# Evaluate svm model
 
 
 ##added
