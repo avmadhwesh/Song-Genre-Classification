@@ -47,12 +47,6 @@ This is the confusion matrix for the Support Vector Machine Model we trained. It
 
 This is the confusion matrix for the Decision Tree classifier that was implemented for our dataset. It is shown that this model is accurately predicting all of the genres at least once. Once again, the model is correctly predicting pop genres the most due to the dataset having a larger subset of pop songs.
 
-##### Learning Curve
-
-![Learning Curve](/images/learning-curve.png)
-
-The learning curve demonstrates the MNB model's training dynamics and generalization performance. The stable cross-validation score signifies consistent performance cross varying training sample sizes. This suggests that the model demonstrates thorough generalization capabilities and is not prone to significant fluctuations in performance with different data subsets. The increasing trend of the training score with the number of training examples indicates the model's capacity to learn and improve accuracy as it encounters more data. 
-
 ##### Quantitative Metrics
 We used 4 quantitative metrics to test our ML models: accuracy, precision, recall and F1 score. Our goal for all of the metrics would be to maximize the value as close to 1 as possible. We received the following scores using the Scikit-Learn, a ML library that we can use to calculate these performance metrics. For Multionomial Naive Bayes, accuracy was 0.962, precision was 0.9631, recall was 0.962, and F1 score was 0.943. For Decision Tree Classifier, accuracy was 0.94, precision was 0.937, recall was 0.94, and F1-score was 0.938. For Support Vector Machine, accuracy was 0.962, precision was 0.963, recall was 0.962, and F1-score was 0.943.
 
