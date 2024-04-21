@@ -25,6 +25,9 @@ The three data preprocessing methods we implemented were encoding each of the ge
 
 The ML algorithm we implemented was the Multinomial Naive Bayes model. We chose this model because it is a supervised learning algorithm that excels in text classification, which aligns well with our project’s goal of genre classification based on lyrics (text). More specifically, MNB uses the frequency of words to determine classifications, which is particularly helpful for genre classification given lyrics. This is because certain words or phrases tend to be more prominent in specific genres, so the frequency of words in lyrics can be a good indicator to predict the genre. We also chose MND because it allows for interpretability, so we can see which words or features contributed the most to the classification and understand why a song is classified into a specific genre. 
 
+#### Final Progress:
+
+
 ## Results/Discussion
 We plan on using 4 quantitative metrics. The first metric is accuracy [4,5]. The second metric is precision [4,6]. The third metric is recall [4,7]. The last metric is the F1 score [4,8]. The goal for all would be to maximize the value as close to 1 as possible, but a value of .8 or above can be considered successful for accuracy and values above .7 for each genre can be considered successful for precision, recall and F1 score [5,6,7,8]. We expect to get an accuracy score above .8 and precision, recall and F1 scores above .7 for each class. 
 
@@ -32,7 +35,7 @@ We plan on using 4 quantitative metrics. The first metric is accuracy [4,5]. The
 
 ##### Confusion Matrices
 
-![Confusion Matrix](/images/confusion-matrix.png)
+![Confusion Matrix for Multinomial Naive Bayes](/images/confusion-matrix.png)
 
 This confusion matrix for the Multinomial Naive Bayes Model provides insights into the model's performance across different genres. The imbalance suggests that the model may be biased towards predicting the 'pop' genre. This is possibly due to an imbalance in the dataset or features that strongly correlate with the 'pop' genre, or potentially due to the inherent characteristics of the dataset. In future steps we seek to improve the model and re-evaluate the confusion matrix.
 
@@ -41,14 +44,13 @@ This confusion matrix for the Multinomial Naive Bayes Model provides insights in
 
 ![Learning Curve](/images/learning-curve.png)
 
-The learning curve demonstrates the model's training dynamics and generalization performance. The stable  cross-validation score signifies consistent performance cross varying training sample sizes. This suggests that the model demonstrates thorough generalization capabilities and is not prone to significant fluctuations in performance with different data subsets. The increasing trend of the training score with the number of training examples indicates the model's capacity to learn and improve accuracy as it encounters more data. 
+The learning curve demonstrates the MNB model's training dynamics and generalization performance. The stable cross-validation score signifies consistent performance cross varying training sample sizes. This suggests that the model demonstrates thorough generalization capabilities and is not prone to significant fluctuations in performance with different data subsets. The increasing trend of the training score with the number of training examples indicates the model's capacity to learn and improve accuracy as it encounters more data. 
 
-We used 4 quantitative metrics to test our Multinomial Naive Bayes Model: accuracy, precision, recall and F1 score. Our goal for all of the metrics would be to maximize the value as close to 1 as possible. We received the following scores using the Scikit-Learn, a ML library that we can use to calculate these performance metrics.  For accuracy we received 0.962, precision was 0.9631, recall was 0.962, and F1 score was 0.943.
+#### Quantitative Metrics
+We used 4 quantitative metrics to test our ML models: accuracy, precision, recall and F1 score. Our goal for all of the metrics would be to maximize the value as close to 1 as possible. We received the following scores using the Scikit-Learn, a ML library that we can use to calculate these performance metrics.  For accuracy we received 0.962, precision was 0.9631, recall was 0.962, and F1 score was 0.943.
 
 From these results, we can analyze the performance metrics. All of these scores are very close to 1, showing us that our model is performing well when it is classifying song lyrics into genres. We want to see scores above .8 for accuracy and scores above .7 for precision, recall, and F1 score. However, all scores are above 0.94, which shows a positive result for our model’s performance. 
-There are several reasons why we have a well performing model. To begin with, the data has been preprocessed by encoding each of the genres into numbers, feature extraction, and splitting our dataset into a train and a test set. This made sure the data is in an optimal state to be utilized with the model. We also made sure to choose a model that works well for our specific project scenario. Using a Multinomial Naive Bayes Model is a good choice for classification, which is what we want to do to classify song lyrics into genres. Our code has also been implemented correctly leading us to accurate performance. 
-
-As we move forward, we hope to train the machine learning model with the data continuously so that it learns the dataset well and is able to predict as we apply it forward. We will also see if there are any errors that are appearing in the processed data and results. This will give us an idea on how to further improve the testing/training set to remove any faulty data points. We do not want the algorithm to be based on incorrect data.  
+There are several reasons why we have a well performing model. To begin with, the data has been preprocessed by encoding each of the genres into numbers, feature extraction, and splitting our dataset into a train and a test set. This made sure the data is in an optimal state to be utilized with the model. We also made sure to choose a model that works well for our specific project scenario. Using a Multinomial Naive Bayes Model is a good choice for classification, which is what we want to do to classify song lyrics into genres. Our code has also been implemented correctly leading us to accurate performance.  
 
 For the next steps of the project, there are ways to improve performance of the model. In general, a larger data set can be introduced to train the set with a variety of data points. This will help the model be familiar with a wider set of data points. This might increase accuracy later on when newer data sets are fed into the model. We can also consider adding more models to see how the accuracy is with the data. For example, we could add random forests, neural networks or gradient boosting machines. We can also collaborate with industry professionals to see how to improve the algorithms to perform in a more optimal way. Conducting market research will help us optimize our product to what would be most useful for consumers. 
 
