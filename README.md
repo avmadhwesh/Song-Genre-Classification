@@ -1,5 +1,5 @@
 /dir/images: Confusion matrix images and visualizations
-/dir/GanttChart.xlsx: Gantt Chart spreadsheet of our semester timeline
+/dir/GanttChart.xlsx: Gantt Chart spreadsheet of our semester timeline <br>
 /dir/index.md: File containing our project proposal, project midterm, and project final reports<br>
 /dir/ml.py: Preprocesses music data and then trains Naive Bayes, Decision Tree, and Support Vector Machine to predict genres <br>
 /dir/newsong.csv: Dataset file in spreadsheet format <br>
