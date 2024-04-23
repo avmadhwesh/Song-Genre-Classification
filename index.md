@@ -26,6 +26,13 @@ The three data preprocessing methods we implemented were encoding each of the ge
 The ML algorithm we implemented was the Multinomial Naive Bayes model. We chose this model because it is a supervised learning algorithm that excels in text classification, which aligns well with our project’s goal of genre classification based on lyrics (text). More specifically, MNB uses the frequency of words to determine classifications, which is particularly helpful for genre classification given lyrics. This is because certain words or phrases tend to be more prominent in specific genres, so the frequency of words in lyrics can be a good indicator to predict the genre. We also chose MND because it allows for interpretability, so we can see which words or features contributed the most to the classification and understand why a song is classified into a specific genre. 
 
 #### Final Progress:
+The 2 additional ML algorithms that were implemented were Support Vector Machine Classification and Decision Tree Classification. 
+Support Vector Machine is a powerful supervised learning algorithm used for classification tasks. In our project, SVM is employed to classify song lyrics into distinct musical genres based on patterns extracted from the content of the lyrics.
+Decision Tree Classification is another popular supervised learning algorithm used for classification tasks. In our project, song lyrics are transformed into numerical feature vectors using techniques like TF-IDF vectorization, converting raw text data into a suitable format for training.
+
+
+Feature Vectorization: Song lyrics are transformed into numerical feature vectors using techniques like TF-IDF vectorization. This process converts the raw text data into a format suitable for training the Decision Tree model.
+
 
 
 ## Results/Discussion
@@ -53,6 +60,12 @@ We used 4 quantitative metrics to test our ML models: accuracy, precision, recal
 #### INCLUDE COMPARISION BETWEEN ALL THREE MODEL IN SECTION BELOW AND TALK ABOUT THE CONFUSION MATRICES MORE
 From these results, we can analyze the performance metrics. All of these scores are very close to 1, showing us that our model is performing well when it is classifying song lyrics into genres. We want to see scores above .8 for accuracy and scores above .7 for precision, recall, and F1 score. However, all scores are above 0.94, which shows a positive result for our model’s performance. 
 There are several reasons why we have a well performing model. To begin with, the data has been preprocessed by encoding each of the genres into numbers, feature extraction, and splitting our dataset into a train and a test set. This made sure the data is in an optimal state to be utilized with the model. We also made sure to choose a model that works well for our specific project scenario. Using a Multinomial Naive Bayes Model is a good choice for classification, which is what we want to do to classify song lyrics into genres. Our code has also been implemented correctly leading us to accurate performance.  
+
+Multinomial Naive Bayes is well-suited for classification tasks and has been applied to genre classification based on song lyrics. It is efficient and simple to implement with fast training and prediction times. It can also high-dimension data from text-based datasets. However, it relies on bag-of-words representation and performs poorly with highly imbalanced datasets. 
+Support Vector Machine is effective in high-dimensional spaces, is versatile, and is robust to overfitting. However, it can lead to misclassification if there are noisy classes and is more susceptible to overfitting. Decision Tree Classifier is suitable at generating insights into feature importance and can handle categorial data. However, it has a greedy nature and is not very robust.
+
+In terms of metrics, all 3 models have high scores for accuracy, precision, recall, and F-1 score. This shows a strong performance in genre classification based on song lyrics. However, confusion matrices show biases towards 'pop' in MNB and SVM models. MNB and SVM are great at handling text data and high-dimensional spaces while DTC can struggle with overfitting and capturing complex relationships.
+
 
 For the next steps of the project, there are ways to improve performance of the model. In general, a larger data set with larger subsets of other genres (such as rap, rock, country, etc.) can be introduced to train the models with a variety of data points. This will help the models be familiar with a wider set of data points. This might increase accuracy later on when newer data sets are fed into the model. We can also consider adding more models to see how the accuracy is with the data. For example, we could add random forests, neural networks or gradient boosting machines. We can also collaborate with industry professionals to see how to improve the algorithms to perform in a more optimal way. Conducting market research will help us optimize our product to what would be most useful for consumers. 
 
