@@ -6,3 +6,4 @@
 /dir/shortenData.py: Reads data from csv and modifies data to new CSV file <br>
 
 see https://avmadhwesh.github.io/Song-Genre-Classification/
+Contributors: Avni Madhwesh, Nithya Akula, Muni Tanmayi Bondu, Niha Yendamuri, Ria Nayar
